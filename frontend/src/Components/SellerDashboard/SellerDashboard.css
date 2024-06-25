@@ -1,0 +1,73 @@
+/* SellerDashboard.css */
+.seller-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .add-product-section {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .seller-products-section {
+    flex: 2;
+  }
+  
+  .products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .product-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-details {
+    margin-top: 10px;
+  }
+  
+  .addproduct {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .addproduct-itemfield {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .addproduct-price {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .addproduct-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .addproduct-btn:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,107 @@
+.shopcategory-banner {
+  display: block;
+  margin: 30px auto;
+  width: 80%;
+}
+
+.shopcategory-indexSort {
+  display: flex;
+  margin: 0px 170px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopcategory-sort {
+  position: relative; /* Додаємо позиціонування */
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #888;
+  cursor: pointer;
+}
+
+.shopcategory-sort img {
+  margin-left: 5px; /* Відступ між текстом і іконкою */
+}
+
+.shopcategory-indexSort p span {
+  font-weight: 600;
+}
+
+.genre-checkboxes {
+  position: absolute; /* Абсолютне позиціонування */
+  top: 100%; /* Встановлення розташування відносно родинного елемента */
+  right: 0; /* Центруємо вправо */
+  background-color: white;
+  border: 1px solid #888;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь для контейнера */
+  padding: 10px;
+  z-index: 1000; /* Забезпечуємо, щоб фільтри відображалися над іншими елементами */
+}
+
+.genre-checkboxes label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.genre-checkboxes input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.shopcategory-products {
+  width: 90%;
+  max-width: 1360px;
+  justify-content: center;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  width: 200px;
+  height: 60px;
+  border-radius: 75px;
+  background: #ededed;
+  color: #787878;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+  .shopcategory-banner {
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .shopcategory-indexSort {
+    width: 90%;
+    margin: auto;
+  }
+
+  .shopcategory-sort {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .shopcategory-indexSort p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  .shopcategory-banner {
+    width: 95%;
+  }
+
+  .shopcategory-loadmore {
+    margin: 60px auto;
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
